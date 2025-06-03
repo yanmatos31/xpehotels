@@ -2,6 +2,7 @@
   "name": "hotels",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "ng build && firebase deploy && git add . && git commit -m \"deploy automático\" && git push origin main",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
