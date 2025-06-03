@@ -1,0 +1,13 @@
+<p>hotels works!</p>
+<ul>
+    @for (hotel of hoteis; track $index) {
+      <li>
+        <a class="button"
+           [routerLink]="['/hotels', hotel]"
+           routerLinkActive="activebutton"
+           ariaCurrentWhenActive="page">
+          {{ hotel }}
+        </a>
+      </li>
+    }
+  </ul>

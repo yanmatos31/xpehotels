@@ -1,0 +1,35 @@
+<h1>Teste</h1>
+<!-- @if (exibirInformacaoSecreta){
+  <p>Informação secreta: 1234</p>
+}
+<ul>
+  @for (hotel of hoteis; track $index){
+  <li>{{hotel}}</li>
+    }@empty{
+      <p>A lista está vazia</p>
+    }
+</ul>
+<input type="text" [(ngModel)]="nomeHotel" placeholder="Digite o nome do hotel">;
+<button (click)='limparNgModel()'>Limpar NgModel</button>
+<button (click)='limparHoteis()'>Zerar lista</button>
+<button (click)='exibirHotel()'>Exibir nome do hotel</button>-->
+
+<nav>
+  <a class="button"
+     routerLink="/hotels"
+     routerLinkActive="activebutton"
+     ariaCurrentWhenActive="page">
+    Hóteis
+  </a> |
+  <a class="button"
+     routerLink="/login"
+     routerLinkActive="activebutton"
+     ariaCurrentWhenActive="page">
+    Login
+  </a>
+</nav>
+<!--<nav>
+  <a class="button" routerLink="/hotels" routerLinkActive="active" ariaCurrentWhenActive="page">Hóteis</a>
+  <a class="button" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+</nav>-->
+<router-outlet />
